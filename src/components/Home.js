@@ -1,4 +1,4 @@
-import { ethers } from 'ethers';
+
 import { useEffect, useState } from 'react';
 
 import close from '../assets/close.svg';
@@ -151,7 +151,7 @@ const Home = ({ home, provider, account, escrow, togglePop }) => {
     useEffect(() => {
         fetchDetails()
         fetchOwner()
-    }, [hasSold])
+    }, [hasSold,  fetchDetails,fetchOwner])
     
 
     return (
